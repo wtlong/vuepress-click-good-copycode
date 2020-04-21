@@ -1,19 +1,16 @@
-# vuepress-plugin-one-click-copy
+# vuepress-copycode
 
 > A vuepress plugin for clipboard-copy
 
-[![npm](https://img.shields.io/npm/v/vuepress-plugin-one-click-copy.svg)](https://www.npmjs.com/package/vuepress-plugin-one-click-copy)
-[![GitHub stars](https://img.shields.io/github/stars/vxhly/vuepress-plugin-one-click-copy)](https://github.com/vxhly/vuepress-plugin-one-click-copy/stargazers)
-[![GitHub license](https://img.shields.io/github/license/vxhly/vuepress-plugin-one-click-copy)](https://github.com/vxhly/vuepress-plugin-one-click-copy/blob/master/LICENSE)
 
 ## Install
 
 ``` bash
 # install dependencies
-npm i vuepress-plugin-one-click-copy -D
+npm i vuepress-copycode -D
 
 # or use yarn
-yarn add vuepress-plugin-one-click-copy -D
+yarn add vuepress-copycode -D
 ```
 
 ## Usage
@@ -22,7 +19,7 @@ Write vuepress config
 
 ``` javascript
 module.exports = {
-  plugins: ['one-click-copy']
+  plugins: ['vuepress-copycode']
 }
 ```
 
@@ -32,15 +29,11 @@ This plugin supports the following configurations.
 
 ``` javascript
 module.exports = {
-  plugins: ['one-click-copy', {
+  plugins: ['vuepress-copycode, {
     copySelector: ['div[class*="language-"] pre', 'div[class*="aside-code"] aside'], // String or Array
-    copyMessage: 'Copy successfully and then paste it for use.', // default is 'Copy successfully and then paste it for use.'
+    copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
     duration: 300, // prompt message display time.
     showInMobile: false // whether to display on the mobile side, default: false.
   }]
 }
 ```
-
-## License
-
-[MIT](https://github.com/vxhly/vuepress-plugin-one-click-copy/blob/master/LICENSE).
