@@ -37,7 +37,7 @@ export default {
       const copyElement = document.createElement('i')
       copyElement.className = 'code-copy'
       copyElement.innerHTML = '<div class="copy-button">'+COPY_NAME+'</div>'
-      copyElement.title = COPY_Title
+      copyElement.title = COPY_TITLE
       copyElement.addEventListener('click', () => {
         this.copyToClipboard(parent.getElementsByTagName("code")[0].innerText,copyElement)
       })

@@ -1,6 +1,6 @@
 {
-  "name": "vuepress-copycode",
-  "version": "1.0.0",
+  "name": "vuepress-plugin-good-copycode",
+  "version": "1.0.4",
   "description": "一键复制",
   "main": "index.js",
   "scripts": {
